@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
         Filme meu_filme = new Filme();
-        meu_filme.setNome("O poderoso chefão");
+        meu_filme.setNome("O poderoso chefão 1");
         meu_filme.setAno_de_lançamento(1970);
         meu_filme.setDuração_em_minutos(180);
         System.out.println("Duração do filme: " + meu_filme.getDuração_em_minutos());
