@@ -7,6 +7,7 @@ import br.com.alura.screenmatch.modelos.Serie;
 import java.util.ArrayList;
 
 public class Principal {
+
     public static void main(String[] args) {
         Filme meu_filme = new Filme();
         meu_filme.setNome("O poderoso chefão 1");
@@ -22,16 +23,16 @@ public class Principal {
         System.out.println("Total de avaliações: " + meu_filme.getTotal_de_avaliação());
         System.out.println(meu_filme.pega_media());
 
-        Serie lost = new Serie();
+        Serie fallout = new Serie();
         System.out.println();
 
-            lost.setNome("Fallout");
-        lost.setAno_de_lançamento(2000);
-        lost.setTemporadas(10);
-        lost.exibe_ficha_tecnica();
-        lost.setMinutyos_do_episodio(50);
-        lost.setEpisodios(10);
-        System.out.println("Duração do para maratonar Lost: " + lost.getDuração_em_minutos());
+        fallout.setNome("Fallout");
+        fallout.setAno_de_lançamento(2024);
+        fallout.setTemporadas(1);
+        fallout.exibe_ficha_tecnica();
+        fallout.setMinutyos_do_episodio(86);
+        fallout.setEpisodios(12);
+        System.out.println("Duração do para maratonar Fallout: " + fallout.getDuração_em_minutos());
 
         Filme outro_filme = new Filme();
         outro_filme.setNome("Avatar");
@@ -41,7 +42,7 @@ public class Principal {
         Calculadora_de_tempo calculadora = new Calculadora_de_tempo();
         calculadora.inclui(meu_filme);
         calculadora.inclui(outro_filme);
-        calculadora.inclui(lost);
+        calculadora.inclui(fallout);
         System.out.println(calculadora.getTempo_total());
 
         Recomendação filtro = new Recomendação();
@@ -49,7 +50,7 @@ public class Principal {
 
         Episodio episodio = new Episodio();
         episodio.setNumero(1);
-        episodio.setSerie(lost);
+        episodio.setSerie(fallout);
         episodio.setTotal_de_vizualizações(300);
         filtro.filtra(episodio);
 
