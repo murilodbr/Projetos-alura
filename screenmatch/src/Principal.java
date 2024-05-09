@@ -54,14 +54,14 @@ public class Principal {
         episodio.setTotal_de_vizualizações(300);
         filtro.filtra(episodio);
 
-        var filme_do_Paulo = new Filme();
-        filme_do_Paulo.setDuração_em_minutos(200);
-        filme_do_Paulo.setNome("Dogville");
-        filme_do_Paulo.setAno_de_lançamento(2003);
-        filme_do_Paulo.avalia(10);
+        var Bebe_rena = new Filme();
+        Bebe_rena.setDuração_em_minutos(200);
+        Bebe_rena.setNome("Bebe rena");
+        Bebe_rena.setAno_de_lançamento(2003);
+        Bebe_rena.avalia(10);
 
         ArrayList<Filme> lista_de_filmes = new ArrayList<>();
-        lista_de_filmes.add(filme_do_Paulo);
+        lista_de_filmes.add(Bebe_rena);
         lista_de_filmes.add(meu_filme);
         lista_de_filmes.add(outro_filme);
     }
