@@ -25,7 +25,7 @@ public class Principal {
         Serie lost = new Serie();
         System.out.println();
 
-        lost.setNome("Fallout");
+            lost.setNome("Fallout");
         lost.setAno_de_lançamento(2000);
         lost.setTemporadas(10);
         lost.exibe_ficha_tecnica();
